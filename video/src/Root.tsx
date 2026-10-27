@@ -2,6 +2,8 @@ import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
+import { Golazo } from "./Golazo/Golazo";
+import { FPS, golazoSchema, TOTAL as GOLAZO_TOTAL } from "./Golazo/constants";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -50,7 +52,22 @@ export const RemotionRoot: React.FC = () => {
           titleColor: "#000000",
         }}
       />
-
+      <Composition
+        // npx remotion render Golazo out/Golazo.mp4
+        id="Golazo"
+        component={Golazo}
+        durationInFrames={GOLAZO_TOTAL}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        schema={golazoSchema}
+        defaultProps={{
+          playerName: "TORREGROSA",
+          playerNumber: 10,
+          homeTeam: "LEONES",
+          awayTeam: "ÁGUILAS",
+        }}
+      />
     </>
   );
 };
