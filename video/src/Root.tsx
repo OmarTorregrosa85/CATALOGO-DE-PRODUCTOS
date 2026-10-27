@@ -4,6 +4,8 @@ import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
 import { Golazo } from "./Golazo/Golazo";
 import { FPS, golazoSchema, TOTAL as GOLAZO_TOTAL } from "./Golazo/constants";
+import { Entrevista } from "./Entrevista/Entrevista";
+import { entrevistaSchema, TOTAL as ENTREVISTA_TOTAL } from "./Entrevista/constants";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -66,6 +68,29 @@ export const RemotionRoot: React.FC = () => {
           playerNumber: 10,
           homeTeam: "LEONES",
           awayTeam: "ÁGUILAS",
+        }}
+      />
+      <Composition
+        // npx remotion render Entrevista out/Entrevista.mp4
+        id="Entrevista"
+        component={Entrevista}
+        durationInFrames={ENTREVISTA_TOTAL}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        schema={entrevistaSchema}
+        defaultProps={{
+          playerName: "TORREGROSA",
+          playerNumber: 10,
+          teamName: "ÁGUILAS",
+          question: "¡Felicidades, campeón! ¿Cómo te sientes después del partido?",
+          answer: [
+            "¡Uf… todavía no me lo creo!",
+            "Cuando vi la falta en el minuto 90, sentí que era mi momento.",
+            "Le pegué con el corazón… ¡y entró por la escuadra!",
+            "Este título es para mi familia y para toda nuestra afición.",
+            "¡Somos campeones de Europa!",
+          ],
         }}
       />
     </>
