@@ -1,0 +1,30 @@
+{
+  "name": "frutinovela-pina-millonaria",
+  "version": "1.0.0",
+  "private": true,
+  "description": "La Piña que fingía ser millonaria — frutinovela animada montada con Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Frutinovela out/la-pina-que-fingia-ser-millonaria.mp4",
+    "miniatura": "remotion still Miniatura out/miniatura.png",
+    "voces": "tsx scripts/generar-voces.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/luckiest-guy": "5.3.0",
+    "@fontsource/nunito": "5.3.0",
+    "@remotion/cli": "4.0.539",
+    "@remotion/fonts": "4.0.539",
+    "@remotion/media-utils": "4.0.539",
+    "@remotion/transitions": "4.0.539",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

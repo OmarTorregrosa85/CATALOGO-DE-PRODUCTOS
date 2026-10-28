@@ -1,0 +1,9 @@
+node_modules
+out
+.env
+# Los medios generados no se suben al repo
+public/clips/*
+public/voces/*
+public/musica/*
+public/sfx/*
+!public/**/.gitkeep

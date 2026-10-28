@@ -1,0 +1,35 @@
+{
+  "titulo": "La Piña que fingía ser millonaria",
+  "actos": [
+    { "numero": 1, "titulo": "La llegada", "desdeEscena": 1 },
+    { "numero": 2, "titulo": "La mentira crece", "desdeEscena": 7 },
+    { "numero": 3, "titulo": "La fiesta", "desdeEscena": 14 },
+    { "numero": 4, "titulo": "La verdad", "desdeEscena": 20 }
+  ],
+  "escenas": [
+    { "id": 1, "personaje": "Narrador", "texto": "Un día llegó al Barrio Frutal una piña que nadie conocía… y que todos iban a recordar.", "descripcion": "Convertible rojo llega, Lupita baja en cámara lenta." },
+    { "id": 2, "personaje": "Valentina", "texto": "¿Y esa quién se cree? ¡Llegó como si fuera dueña del barrio!", "descripcion": "Valentina graba desde la ventana.", "sfx": "murmullos.mp3" },
+    { "id": 3, "personaje": "Lupita", "texto": "Mi papá tiene hoteles en Miami. Vine a descansar de tanta plata.", "descripcion": "Lupita camina con bolsas de compras." },
+    { "id": 4, "personaje": "Ramiro", "texto": "¡Ay, perdón señorita! Déjeme ayudarla.", "descripcion": "Ramiro choca con Lupita.", "sfx": "golpe.mp3" },
+    { "id": 5, "personaje": "Lupita", "texto": "No me toques, coco sudado. Esta cartera vale más que tu casa.", "descripcion": "Lupita lo mira con asco." },
+    { "id": 6, "personaje": "Narrador", "texto": "Ramiro no dijo nada. Pero él guardaba un secreto que nadie sabía.", "descripcion": "Ramiro triste al atardecer." },
+    { "id": 7, "personaje": "Lupita", "texto": "Esta es mi casita de vacaciones. Nada del otro mundo.", "descripcion": "Selfies en la casa elegante." },
+    { "id": 8, "personaje": "Valentina", "texto": "Yo no le creo nada. Esa casa era de alguien más… ¡yo lo sé!", "descripcion": "Chisme en el puesto de frutas.", "sfx": "murmullos.mp3" },
+    { "id": 9, "personaje": "Lupita", "texto": "Don Mango, usted y yo somos del mismo nivel. Los ricos debemos estar juntos.", "descripcion": "Lupita coquetea en el parque." },
+    { "id": 10, "personaje": "Don Mango", "texto": "Interesante, señorita. ¿Y de qué hoteles me dijo que era su papá?", "descripcion": "Don Mango levanta una ceja." },
+    { "id": 11, "personaje": "Lupita", "texto": "Eh… de varios. Muchos. En Miami… y en otros lados.", "descripcion": "Lupita nerviosa y sudando." },
+    { "id": 12, "personaje": "Lupita", "texto": "Sí, prima, devuelvo el carro el lunes… y la casa, cuando vuelvan los dueños.", "descripcion": "Llamada de noche." },
+    { "id": 13, "personaje": "Valentina", "texto": "¡Lo sabía! ¡Todo es prestado!", "descripcion": "Valentina graba desde los arbustos.", "sfx": "golpe.mp3" },
+    { "id": 14, "personaje": "Lupita", "texto": "¡Bienvenidos a mi mansión! ¡Esta noche todo corre por mi cuenta!", "descripcion": "Fiesta lujosa.", "sfx": "fiesta.mp3" },
+    { "id": 15, "personaje": "Lupita", "texto": "¿Tú qué haces aquí? Esto no es para pobres.", "descripcion": "Lupita bloquea la puerta a Ramiro.", "sfx": "fiesta.mp3" },
+    { "id": 16, "personaje": "Don Mango", "texto": "Él viene conmigo.", "descripcion": "Don Mango pone la mano en el hombro de Ramiro.", "sfx": "golpe.mp3" },
+    { "id": 17, "personaje": "Dueña de la casa", "texto": "¿Qué es esto? ¿¡Qué hacen en NUESTRA casa!?", "descripcion": "Llegan los dueños con maletas.", "sfx": "murmullos.mp3" },
+    { "id": 18, "personaje": "Narrador", "texto": "Y en un segundo… la mentira se derrumbó.", "descripcion": "Zoom dramático a Lupita.", "sfx": "golpe.mp3" },
+    { "id": 19, "personaje": "Valentina", "texto": "¡Escuchen todos! Ni el carro, ni la casa, ni la cartera son de ella.", "descripcion": "Valentina muestra su celular.", "sfx": "murmullos.mp3" },
+    { "id": 20, "personaje": "Lupita", "texto": "Yo solo quería que me respetaran… que alguien me mirara.", "descripcion": "Lupita llora." },
+    { "id": 21, "personaje": "Don Mango", "texto": "Ramiro es mi hijo. Mi único heredero. Y escogió vivir humilde para conocer a la gente de verdad.", "descripcion": "Revelación.", "sfx": "golpe.mp3" },
+    { "id": 22, "personaje": "Lupita", "texto": "Y yo… te humillé.", "descripcion": "Arrepentimiento." },
+    { "id": 23, "personaje": "Ramiro", "texto": "El dinero no te hace valiosa, Lupita. Lo que eres sí. Empieza de nuevo… pero con la verdad.", "descripcion": "Ramiro le ofrece la mano." },
+    { "id": 24, "personaje": "Narrador", "texto": "Porque las mentiras te pueden dar una noche de fiesta… pero solo la verdad te da una vida. ¿Tú la perdonarías? Déjalo en los comentarios.", "descripcion": "Lupita trabaja en un puesto de frutas." }
+  ]
+}
