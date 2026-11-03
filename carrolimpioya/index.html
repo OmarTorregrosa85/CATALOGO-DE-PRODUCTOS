@@ -3,161 +3,389 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carro Limpio Ya · Aspiradora inalámbrica 24V</title>
 <meta name="description" content="Aspiradora inalámbrica 24V para carro y hogar. Envíos a toda Colombia, pagas al recibir.">
+<meta name="theme-color" content="#15181d">
 <meta property="og:title" content="Carro Limpio Ya · Aspiradora inalámbrica 24V">
 <meta property="og:description" content="Tu carro limpio en 10 minutos. $129.900, envío a toda Colombia y pagas al recibir.">
 <meta property="og:image" content="https://omartorregrosa85.github.io/CATALOGO-DE-PRODUCTOS/carrolimpioya/carro.jpg">
 <meta property="og:url" content="https://omartorregrosa85.github.io/CATALOGO-DE-PRODUCTOS/carrolimpioya/">
 <meta property="og:type" content="website">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Carro Limpio Ya</title>
+<link rel="icon" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Figtree:wght@400;500;700&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: una columna para celular; foto de antes/después arriba, beneficios, usos, oferta y formulario que arma el pedido en WhatsApp */
+/* Concepto: "taller limpio". Fondo carbón como el producto, naranja de acción como la marca,
+   superficies claras para leer. Una columna para celular; en escritorio el contenido se centra a 600px. */
 :root{
-  --bg:#f3f4f6; --surface:#ffffff; --ink:#15181d; --muted:#596170; --line:#dfe2e7;
-  --accent:#e8501c; --accent-soft:#fde8df; --wa:#1f9e57;
-  --display:"Archivo", "Arial Black", system-ui, sans-serif;
-  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ink:#15181d;       /* carbón: el producto y el héroe */
+  --ink-2:#22272f;     /* tarjetas sobre fondo oscuro */
+  --paper:#f4f2ee;     /* fondo de lectura, gris cálido */
+  --card:#ffffff;
+  --text:#1c2027;
+  --muted:#5e6572;
+  --line:#e2ded7;
+  --orange:#e8501c;    /* acción y marca */
+  --orange-2:#ff7a45;
+  --orange-soft:#fdeae1;
+  --green:#1f9e57;     /* WhatsApp */
+  --display:"Archivo","Arial Black",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#111317; --surface:#1b1f25; --ink:#eef0f3; --muted:#a2a9b6; --line:#2b313a;
-  --accent:#ff6a35; --accent-soft:#3a2117; --wa:#2fbf6c; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#111317; --surface:#1b1f25; --ink:#eef0f3; --muted:#a2a9b6; --line:#2b313a;
-  --accent:#ff6a35; --accent-soft:#3a2117; --wa:#2fbf6c; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:0 96px}
-.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
-h1,h2{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0;letter-spacing:-.01em}
-h1{font-size:2.15rem;font-weight:900}
-h2{font-size:1.5rem;font-weight:900}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font:16px/1.55 var(--body);-webkit-font-smoothing:antialiased;
+  padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;text-wrap:balance;letter-spacing:-.015em}
 p{margin:0}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));
-  background:var(--ink);color:var(--bg);text-align:center;font-size:.85rem;font-weight:700;padding:8px 16px;letter-spacing:.02em}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
-.hero{display:flex;flex-direction:column;gap:16px;padding-top:20px}
-.hero img{width:100%;border-radius:18px;aspect-ratio:4/5;object-fit:cover;display:block}
-.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.lead{color:var(--muted);font-size:1.05rem}
-.price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-variant-numeric:tabular-nums}
-.price strong{font-family:var(--display);font-size:2.2rem;font-weight:900}
-.price s{color:var(--muted);font-size:1.1rem}
-.badge{background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.85rem;padding:4px 10px;border-radius:99px}
-.btn{display:flex;align-items:center;justify-content:center;width:100%;padding:16px 20px;border-radius:14px;border:0;
-  font:700 1.05rem var(--body);text-decoration:none;cursor:pointer;background:var(--accent);color:#fff}
-.btn:focus-visible,input:focus-visible,.opt:focus-within{outline:3px solid var(--ink);outline-offset:2px}
-.btn.wa{background:var(--wa)}
-.note{font-size:.88rem;color:var(--muted);text-align:center}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.feat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:4px;min-width:0}
-.feat .n{font-family:var(--display);font-weight:900;font-size:1.35rem;color:var(--accent)}
-.feat span{color:var(--muted);font-size:.9rem}
-.media{border-radius:16px;width:100%;display:block;background:#fff}
-.stack{display:flex;flex-direction:column;gap:14px}
-.uses{display:flex;flex-wrap:wrap;gap:8px}
-.uses span{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 12px;font-size:.9rem}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.pair img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%}
-.order{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:16px}
-.opt{display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:14px;padding:14px;cursor:pointer}
-.opt input{accent-color:var(--accent);width:20px;height:20px;margin:0}
-.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.wrap{max-width:600px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+section{padding-block:44px}
+.eyebrow{font:700 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+h2{font-size:1.75rem;font-weight:900}
+.sub{color:var(--muted);margin-top:10px}
+
+/* Barra superior y encabezado */
+.ticker{background:var(--orange);color:#fff;font:700 .8rem/1 var(--body);overflow:hidden;white-space:nowrap;padding-block:9px;padding-top:calc(9px + env(safe-area-inset-top,0px))}
+.ticker div{display:inline-block;padding-left:100%;animation:run 22s linear infinite}
+.ticker span{margin-right:42px}
+@keyframes run{to{transform:translateX(-100%)}}
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:10px}
+.brand b{font:900 1.15rem/1 var(--display);letter-spacing:-.02em}
+.brand b em{font-style:normal;color:var(--orange-2)}
+.chip-wa{display:inline-flex;align-items:center;gap:6px;background:var(--ink-2);color:#fff;text-decoration:none;font:600 .82rem/1 var(--body);padding:9px 12px;border-radius:99px;border:1px solid #333a45}
+.chip-wa i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px rgba(61,220,132,.2)}
+
+/* Héroe */
+.hero{background:var(--ink);color:#fff;padding-top:8px;padding-bottom:40px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -20% -40% -20%;height:60%;background:radial-gradient(closest-side,rgba(232,80,28,.28),transparent);pointer-events:none}
+.hero .wrap{display:flex;flex-direction:column;gap:18px;position:relative;z-index:1}
+.hero-img{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:#000}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-tag{position:absolute;left:14px;bottom:14px;background:rgba(21,24,29,.82);backdrop-filter:blur(6px);color:#fff;font:700 .82rem/1.2 var(--body);padding:10px 12px;border-radius:12px;display:flex;gap:8px;align-items:center}
+.hero-tag b{color:var(--orange-2)}
+.hero h1{font-size:2.5rem;font-weight:900}
+.hero h1 span{color:var(--orange-2)}
+.hero .lead{color:#c3c8d1;font-size:1.06rem}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 14px;font-variant-numeric:tabular-nums}
+.price strong{font:900 2.6rem/1 var(--display)}
+.price s{color:#8b929e;font-size:1.15rem}
+.save{background:var(--orange);color:#fff;font:800 .8rem/1 var(--body);padding:7px 10px;border-radius:8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;padding:14px 20px;border:0;border-radius:16px;
+  background:var(--orange);color:#fff;font:800 1.08rem/1.1 var(--body);text-decoration:none;cursor:pointer;box-shadow:0 10px 24px -10px rgba(232,80,28,.8)}
+.btn.wa{background:var(--green);box-shadow:0 10px 24px -10px rgba(31,158,87,.7)}
+.btn:focus-visible,.chip-wa:focus-visible,input:focus-visible,.opt:focus-within,summary:focus-visible{outline:3px solid var(--orange-2);outline-offset:3px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.trust div{background:var(--ink-2);border:1px solid #2d333d;border-radius:12px;padding:10px 8px;text-align:center;font:600 .78rem/1.25 var(--body);color:#dfe3e9}
+.trust b{display:block;font:900 1rem/1.1 var(--display);color:#fff;margin-bottom:3px}
+
+/* Antes / después */
+.ba{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;user-select:none;touch-action:pan-y;background:#000;margin-top:20px;box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff}
+.ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:var(--orange);border:3px solid #fff;
+  display:grid;place-items:center;color:#fff;font:900 1.1rem/1 var(--display);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.ba .lbl{position:absolute;top:14px;font:800 .75rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;padding:8px 10px;border-radius:8px;color:#fff}
+.ba .l1{left:14px;background:rgba(21,24,29,.8)}
+.ba .l2{right:14px;background:var(--orange)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.hint{text-align:center;color:var(--muted);font-size:.88rem;margin-top:12px}
+
+/* Beneficios */
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.feat .n{font:900 1.7rem/1 var(--display);color:var(--orange)}
+.feat b{font-size:1rem}
+.feat span{color:var(--muted);font-size:.88rem;line-height:1.4}
+
+/* Qué trae la caja */
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:22px}
+.box img{background:#fff;padding:16px 18px 4px;width:100%;max-height:300px;object-fit:contain}
+.box ul{list-style:none;margin:0;padding:6px 18px 18px;display:grid;gap:10px}
+.box li{display:flex;gap:10px;align-items:flex-start}
+.box li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:6px;background:var(--orange-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%23e8501c' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.note-sm{color:var(--muted);font-size:.84rem;padding:0 18px 18px}
+
+/* Usos */
+.uses{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:22px;padding-bottom:6px;margin-inline:calc(-1*max(18px,env(safe-area-inset-left,0px)));padding-inline:max(18px,env(safe-area-inset-left,0px))}
+.use{flex:0 0 72%;scroll-snap-align:start;position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5}
+.use img{width:100%;height:100%;object-fit:cover}
+.use p{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;color:#fff;font:800 1.05rem/1.2 var(--display);background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.use p small{display:block;font:500 .85rem/1.35 var(--body);color:#dfe3e9;margin-top:4px}
+
+/* Comparación */
+.cmp{margin-top:22px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.cmp table{width:100%;border-collapse:collapse;font-size:.86rem;table-layout:fixed}
+.cmp th:first-child,.cmp td:first-child{width:31%}
+.cmp th,.cmp td{padding:11px 6px;text-align:center;border-bottom:1px solid var(--line)}
+.cmp th:first-child,.cmp td:first-child{text-align:left;color:var(--muted);font-weight:500}
+.cmp thead th{font:800 .82rem/1.2 var(--body);color:var(--text)}
+.cmp .us{background:var(--orange-soft)}
+.cmp thead .us{background:var(--orange);color:#fff}
+.cmp tr:last-child td{border-bottom:0}
+.y{color:var(--green);font-weight:800}.n{color:#b3412a;font-weight:800}
+
+/* Pasos */
+.dark{background:var(--ink);color:#fff}
+.dark .sub{color:#b8bec8}
+.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;background:var(--ink-2);border:1px solid #2d333d;border-radius:16px;padding:16px}
+.steps li::before{content:counter(s);flex:none;width:36px;height:36px;border-radius:10px;background:var(--orange);display:grid;place-items:center;font:900 1.1rem/1 var(--display)}
+.steps b{display:block;font-size:1.02rem}
+.steps span{color:#b8bec8;font-size:.9rem}
+
+/* Pedido */
+.order{background:var(--card);border-radius:22px;padding:22px 18px;border:2px solid var(--ink);box-shadow:0 22px 50px -30px rgba(0,0,0,.5);display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.opt{position:relative;display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:16px;padding:16px 14px;cursor:pointer;background:var(--card)}
+.opt input{accent-color:var(--orange);width:22px;height:22px;margin:0;flex:none}
+.opt:has(input:checked){border-color:var(--orange);background:var(--orange-soft)}
 .opt .t{flex:1;min-width:0}
-.opt .t small{display:block;color:var(--muted)}
-.opt .p{font-weight:700;font-variant-numeric:tabular-nums}
-label.f{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:500}
-input[type=text],input[type=tel]{font:inherit;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
-.err{color:var(--accent);font-size:.88rem}
-details{border-top:1px solid var(--line);padding:14px 0}
-details:last-of-type{border-bottom:1px solid var(--line)}
-summary{font-weight:700;cursor:pointer}
-details p{color:var(--muted);margin-top:8px}
-.float{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--bg);border-top:1px solid var(--line);
-  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.float .btn{max-width:560px;margin:0 auto;padding:13px}
-footer{text-align:center;color:var(--muted);font-size:.85rem}
-@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:active{transform:scale(.98)}}
+.opt .t b{display:block}
+.opt .t small{color:var(--muted)}
+.opt .p{font:900 1.15rem/1 var(--display);font-variant-numeric:tabular-nums;text-align:right}
+.opt .p s{display:block;font:500 .78rem/1.4 var(--body);color:var(--muted)}
+.opt .p .sv{display:block;font:700 .76rem/1.4 var(--body);color:var(--green);font-style:normal}
+.opt .tag{position:absolute;top:-10px;right:14px;background:var(--ink);color:#fff;font:800 .68rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:6px}
+label.f{display:flex;flex-direction:column;gap:5px;font-size:.88rem;font-weight:600}
+input[type=text],input[type=tel]{font:500 1rem var(--body);padding:14px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);color:var(--text);width:100%}
+input[type=text]:focus,input[type=tel]:focus{border-color:var(--orange);background:#fff}
+.err{color:#b3412a;font-size:.88rem;font-weight:600}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line);padding-top:12px;font-weight:600}
+.total b{font:900 1.4rem/1 var(--display);font-variant-numeric:tabular-nums}
+.small{font-size:.84rem;color:var(--muted);text-align:center}
+
+/* Garantía */
+.guar{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:22px}
+.guar .seal{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:900 .56rem/1.1 var(--display);letter-spacing:.02em;text-align:center;border:3px solid var(--orange)}
+.guar p{color:var(--muted);font-size:.92rem;margin-top:4px}
+
+/* Preguntas */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 16px;margin-top:10px}
+summary{font-weight:700;cursor:pointer;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:900 1.3rem/1 var(--display);color:var(--orange)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);padding-bottom:14px}
+
+footer{background:var(--ink);color:#9aa1ad;font-size:.85rem;padding-block:30px 20px;text-align:center}
+footer .brand{justify-content:center;margin-bottom:10px}
+
+/* Barra inferior fija */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(21,24,29,.96);backdrop-filter:blur(8px);border-top:1px solid #2d333d;
+  padding:10px max(14px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px))}
+.sticky .in{max-width:600px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.sticky .pr{color:#fff;line-height:1.1;flex:none}
+.sticky .pr b{display:block;font:900 1.2rem/1 var(--display)}
+.sticky .pr small{color:#9aa1ad;font-size:.75rem}
+.sticky .btn{min-height:50px;font-size:1rem;flex:1}
+.sticky .wa-ic{flex:none;width:50px;height:50px;border-radius:14px;background:var(--green);display:grid;place-items:center}
+
+.reveal{transition:opacity .5s ease,transform .5s ease}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none;padding-left:0}.reveal{transition:none}}
+@media (min-width:700px){.hero h1{font-size:3rem}.use{flex-basis:46%}}
 </style>
 </head>
 <body>
 
+<div class="ticker" aria-label="Envío a toda Colombia, pagas al recibir"><div>
+  <span>🚚 Envío a toda Colombia</span><span>💵 Pagas cuando te llega</span><span>⚡ Batería 24V recargable</span><span>🎁 Ideal para regalar en Navidad</span>
+  <span>🚚 Envío a toda Colombia</span><span>💵 Pagas cuando te llega</span><span>⚡ Batería 24V recargable</span><span>🎁 Ideal para regalar en Navidad</span>
+</div></div>
 
-<div class="bar">Envío a toda Colombia · Pagas al recibir</div>
-<main class="wrap">
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="logo.jpg" alt="" width="38" height="38"><b>Carro Limpio <em>Ya</em></b></a>
+    <a class="chip-wa" id="headWa" href="#" target="_blank" rel="noopener"><i></i>Escríbenos</a>
+  </div>
+</header>
+
+<main id="top">
   <section class="hero">
-    <img src="carro.jpg" alt="Aspiradora inalámbrica limpiando migas del tapete de un carro">
-    <span class="eyebrow">Aspiradora inalámbrica 24V</span>
-    <h1>Tu carro limpio en 10 minutos, sin cables y sin pagar lavadero</h1>
-    <p class="lead">Potente, liviana y cabe en la guantera. Batería 24V recargable para limpiar todo el carro sin buscar un enchufe.</p>
-    <div class="price"><strong>$129.900</strong><s>$199.900</s><span class="badge">Ahorras $70.000</span></div>
-    <a class="btn" href="#pedido">Pedir ahora, pago al recibir</a>
-    <p class="note">Te confirmamos el pedido por WhatsApp antes de enviarlo.</p>
-  </section>
-
-  <section class="stack">
-    <h2>Migas, arena y pelos donde la escoba no llega</h2>
-    <p class="lead">Entre las sillas, debajo de los tapetes, en el sofá o en la cama. La aspiradora de la casa es pesada, tiene cable y no entra en esos rincones.</p>
-  </section>
-
-  <section class="stack">
-    <h2>Lo que trae</h2>
-    <div class="grid">
-      <div class="feat"><span class="n">24V</span><b>Batería de litio</b><span>Recargable y removible</span></div>
-      <div class="feat"><span class="n">0</span><b>Cables</b><span>Úsala donde sea, recargable</span></div>
-      <div class="feat"><span class="n">+5</span><b>Boquillas</b><span>Para rincones, tapicería y polvo</span></div>
-      <div class="feat"><span class="n">1</span><b>Mano</b><span>Liviana, cabe en la guantera</span></div>
+    <div class="wrap">
+      <div class="hero-img">
+        <img src="carro.jpg" alt="Aspiradora inalámbrica limpiando migas del tapete de un carro" width="900" height="1125">
+        <div class="hero-tag">⚡ <span>Inalámbrica · <b>24V</b></span></div>
+      </div>
+      <span class="eyebrow">Aspiradora inalámbrica para carro y hogar</span>
+      <h1>Tu carro limpio en <span>10 minutos.</span> Sin cables. Sin lavadero.</h1>
+      <p class="lead">Saca las migas, la arena y los pelos que la escoba no alcanza: entre las sillas, debajo de los tapetes y en cada rincón.</p>
+      <div class="price"><strong>$129.900</strong><s>$199.900</s><span class="save">AHORRAS $70.000</span></div>
+      <a class="btn" href="#pedido">Pedir ahora · Pago al recibir</a>
+      <div class="trust">
+        <div><b>$0</b>Pagas al recibir</div>
+        <div><b>2–5</b>días de envío</div>
+        <div><b>🇨🇴</b>Toda Colombia</div>
+      </div>
     </div>
-    <img class="media" src="producto.jpg" alt="Aspiradora con su batería de 24 voltios, boquillas largas y cepillos">
-  </section>
-
-  <section class="stack">
-    <h2>Una aspiradora para todo</h2>
-    <div class="uses"><span>Carro</span><span>Moto y casco</span><span>Sofá</span><span>Cama</span><span>Pelos de mascota</span><span>Teclado</span><span>Cocina</span></div>
-    <div class="pair">
-      <img src="mascota.jpg" alt="Mujer aspirando pelos de perro del sofá">
-      <img src="regalo.jpg" alt="Papá abriendo la aspiradora como regalo de Navidad">
-    </div>
-    <p class="lead">El regalo de Navidad para papá o para quien tiene carro. Lo va a usar cada semana.</p>
-  </section>
-
-  <section class="order" id="pedido">
-    <h2>Haz tu pedido</h2>
-    <form id="form" class="stack" novalidate>
-      <label class="opt"><input type="radio" name="qty" id="q1" value="1" checked><span class="t">1 aspiradora<small>Con batería 24V y boquillas</small></span><span class="p">$129.900</span></label>
-      <label class="opt"><input type="radio" name="qty" id="q2" value="2"><span class="t">2 aspiradoras<small>Una para regalar, ahorras $39.900</small></span><span class="p">$219.900</span></label>
-      <label class="f" for="nombre">Nombre completo<input type="text" id="nombre" autocomplete="name"></label>
-      <label class="f" for="tel">Celular<input type="tel" id="tel" inputmode="tel" autocomplete="tel"></label>
-      <label class="f" for="ciudad">Ciudad y barrio<input type="text" id="ciudad"></label>
-      <label class="f" for="dir">Dirección exacta<input type="text" id="dir" autocomplete="street-address"></label>
-      <p class="err" id="err" hidden>Completa los 4 datos para enviar tu pedido.</p>
-      <a class="btn wa" id="send" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
-      <p class="note">Pagas en efectivo cuando la recibes. Si el botón no abre WhatsApp, escríbenos al <b id="num"></b>.</p>
-    </form>
   </section>
 
   <section>
-    <h2 style="margin-bottom:8px">Preguntas frecuentes</h2>
-    <details><summary>¿Cuánto tarda el envío?</summary><p>Normalmente entre 2 y 5 días hábiles, según tu ciudad.</p></details>
-    <details><summary>¿Cómo pago?</summary><p>En efectivo cuando el mensajero te la entrega. No pagas nada por adelantado.</p></details>
-    <details><summary>¿Cómo se carga?</summary><p>La batería se retira y se carga aparte con su cargador. Te confirmamos por WhatsApp qué incluye la caja.</p></details>
-    <details><summary>¿Tiene garantía?</summary><p>Sí. Te confirmamos las condiciones por WhatsApp antes de despachar tu pedido.</p></details>
+    <div class="wrap">
+      <span class="eyebrow">Mira la diferencia</span>
+      <h2>Antes y después de una pasada</h2>
+      <div class="ba" id="ba" style="--pos:50%">
+        <img src="antes.jpg" alt="Tapete del carro con migas y arena antes de aspirar">
+        <img class="after" src="despues.jpg" alt="El mismo tapete limpio después de aspirar">
+        <span class="lbl l1">Antes</span><span class="lbl l2">Después</span>
+        <div class="bar"></div><div class="knob" aria-hidden="true">↔</div>
+        <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Desliza para comparar antes y después">
+      </div>
+      <p class="hint">👆 Desliza para ver el antes y el después</p>
+    </div>
   </section>
 
-  <footer>Carro Limpio Ya · Pedidos por WhatsApp</footer>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Por qué esta</span>
+      <h2>Pequeña por fuera, potente por dentro</h2>
+      <div class="feats">
+        <div class="feat"><span class="n">24V</span><b>Batería de litio</b><span>Recargable y removible</span></div>
+        <div class="feat"><span class="n">0</span><b>Cables</b><span>Úsala donde no hay enchufe</span></div>
+        <div class="feat"><span class="n">+5</span><b>Boquillas</b><span>Rincones, tapicería y polvo</span></div>
+        <div class="feat"><span class="n">1</span><b>Mano</b><span>Liviana, cabe en la guantera</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Qué trae la caja</span>
+      <h2>Todo lo que necesitas, listo para usar</h2>
+      <div class="box">
+        <img src="producto.jpg" alt="Aspiradora con su batería de 24 voltios, boquillas largas y cepillos" width="900" height="760">
+        <ul>
+          <li>Aspiradora de mano con depósito transparente y filtro lavable</li>
+          <li>Batería de litio 24V recargable</li>
+          <li>Boquillas largas para entre las sillas y rincones</li>
+          <li>Cepillos para tapicería, polvo y pelos de mascota</li>
+          <li>Boquilla ancha para tapetes y sofá</li>
+        </ul>
+        <p class="note-sm">Antes de despachar te confirmamos por WhatsApp el contenido exacto de la caja.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">No es solo para el carro</span>
+      <h2>Una aspiradora para todo</h2>
+      <div class="uses">
+        <div class="use"><img src="mascota.jpg" alt="Mujer aspirando pelos de perro del sofá" loading="lazy"><p>Pelos de mascota<small>Sofá, cama y cojines en una pasada</small></p></div>
+        <div class="use"><img src="carro.jpg" alt="Aspirando el piso de un carro" loading="lazy"><p>Carro y moto<small>Tapetes, sillas, baúl y casco</small></p></div>
+        <div class="use"><img src="regalo.jpg" alt="Papá abriendo la aspiradora de regalo en Navidad" loading="lazy"><p>El regalo para papá<small>Útil, lo va a usar cada semana</small></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Haz la cuenta</span>
+      <h2>¿Por qué no seguir como siempre?</h2>
+      <div class="cmp">
+        <table>
+          <thead><tr><th></th><th class="us">Carro Limpio Ya</th><th>Lavadero</th><th>Aspiradora de casa</th></tr></thead>
+          <tbody>
+            <tr><td>Pagas</td><td class="us"><span class="y">Una vez</span></td><td><span class="n">Cada vez</span></td><td>Una vez</td></tr>
+            <tr><td>Sin cables</td><td class="us"><span class="y">✓</span></td><td>—</td><td><span class="n">✗</span></td></tr>
+            <tr><td>Entra entre las sillas</td><td class="us"><span class="y">✓</span></td><td><span class="y">✓</span></td><td><span class="n">✗</span></td></tr>
+            <tr><td>Cuando tú quieras</td><td class="us"><span class="y">✓</span></td><td><span class="n">✗</span></td><td><span class="y">✓</span></td></tr>
+            <tr><td>Cabe en el carro</td><td class="us"><span class="y">✓</span></td><td>—</td><td><span class="n">✗</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <span class="eyebrow">Sin riesgo</span>
+      <h2>Así funciona el pago contraentrega</h2>
+      <p class="sub">No pagas nada por adelantado. Pagas en efectivo cuando la tienes en la mano.</p>
+      <ol class="steps">
+        <li><div><b>Haces tu pedido</b><span>Con el formulario o escribiéndonos por WhatsApp.</span></div></li>
+        <li><div><b>Te confirmamos por WhatsApp</b><span>Revisamos tus datos y despachamos el mismo día o el siguiente.</span></div></li>
+        <li><div><b>La recibes y pagas</b><span>El mensajero te la entrega en 2 a 5 días hábiles y le pagas a él.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pedido">
+    <div class="wrap">
+      <span class="eyebrow">Oferta de lanzamiento</span>
+      <h2>Haz tu pedido</h2>
+      <form class="order" id="form" novalidate>
+        <label class="opt"><input type="radio" name="qty" id="q1" value="1" checked>
+          <span class="t"><b>1 aspiradora</b><small>Con batería 24V y boquillas</small></span>
+          <span class="p">$129.900<s>$199.900</s></span></label>
+        <label class="opt"><span class="tag">Para regalar</span><input type="radio" name="qty" id="q2" value="2">
+          <span class="t"><b>2 aspiradoras</b><small>Una para ti y otra de regalo</small></span>
+          <span class="p">$219.900<em class="sv">Ahorras $39.900</em></span></label>
+        <label class="f" for="nombre">Nombre completo<input type="text" id="nombre" autocomplete="name" placeholder="Ej: Andrés Gómez"></label>
+        <label class="f" for="tel">Celular<input type="tel" id="tel" inputmode="tel" autocomplete="tel" placeholder="Ej: 300 123 4567"></label>
+        <label class="f" for="ciudad">Ciudad y barrio<input type="text" id="ciudad" placeholder="Ej: Bogotá, Kennedy"></label>
+        <label class="f" for="dir">Dirección exacta<input type="text" id="dir" autocomplete="street-address" placeholder="Calle, número, apto o casa"></label>
+        <div class="total"><span>Total a pagar al recibir</span><b id="total">$129.900</b></div>
+        <p class="err" id="err" hidden>Completa los 4 datos para enviar tu pedido.</p>
+        <a class="btn wa" id="send" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+        <p class="small">Se abrirá WhatsApp con tu pedido listo para enviar. Si no abre, escríbenos al <b id="num"></b>.</p>
+      </form>
+      <div class="guar">
+        <div class="seal">COMPRA<br>SEGURA</div>
+        <div><b>Garantía y derecho de retracto</b><p>Si tu aspiradora llega con un defecto de fábrica, escríbenos y te ayudamos con el cambio. Además, como toda compra a distancia en Colombia, tienes derecho de retracto según el Estatuto del Consumidor.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Resolvemos tus dudas</span>
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Cuánto tarda el envío?</summary><p>Entre 2 y 5 días hábiles según tu ciudad. Te enviamos la guía por WhatsApp para que sigas tu pedido.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>En efectivo al mensajero cuando la recibes. No pagas nada por adelantado.</p></details>
+      <details><summary>¿Cómo se carga?</summary><p>La batería se retira y se carga con su cargador. Te confirmamos por WhatsApp qué incluye la caja antes de despachar.</p></details>
+      <details><summary>¿Sirve para pelos de mascota?</summary><p>Sí. Con el cepillo levanta los pelos del sofá, la cama y la tapicería del carro.</p></details>
+      <details><summary>¿Tiene garantía?</summary><p>Sí, por defectos de fábrica. Te explicamos las condiciones por WhatsApp antes de despachar.</p></details>
+    </div>
+  </section>
 </main>
 
-<div class="float"><a class="btn wa" id="floatBtn" href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="logo.jpg" alt="" width="38" height="38"><b style="color:#fff">Carro Limpio <em>Ya</em></b></a>
+    <p>Envíos a toda Colombia · Pago contraentrega · Atención por WhatsApp</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <div class="in">
+    <div class="pr"><b>$129.900</b><small>Pagas al recibir</small></div>
+    <a class="btn" href="#pedido">Pedir ahora</a>
+    <a class="wa-ic" id="floatWa" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+</div>
 
 <script>
 const WHATSAPP = "573003146133";
 const $ = id => document.getElementById(id);
 const wa = t => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(t);
-$("num").textContent = "+57 " + WHATSAPP.slice(2);
-$("floatBtn").href = wa("Hola, quiero información de la aspiradora inalámbrica.");
+const info = wa("Hola, quiero información de la aspiradora inalámbrica.");
+$("num").textContent = "+57 " + WHATSAPP.slice(2,5) + " " + WHATSAPP.slice(5,8) + " " + WHATSAPP.slice(8);
+$("floatWa").href = info; $("headWa").href = info;
+
+// Comparador antes / después
+const ba = $("ba"), r = $("baRange");
+r.addEventListener("input", () => ba.style.setProperty("--pos", r.value + "%"));
+
+// Pedido
 const fields = ["nombre","tel","ciudad","dir"];
 function msg(){
   const two = $("q2").checked;
@@ -167,14 +395,17 @@ function msg(){
     "\nCiudad y barrio: " + $("ciudad").value.trim() + "\nDirección: " + $("dir").value.trim() +
     "\nPago contraentrega.";
 }
-function update(){ $("send").href = wa(msg()); if (fields.every(f => $(f).value.trim())) $("err").hidden = true; }
-document.querySelectorAll("#form input").forEach(i => i.addEventListener("input", update));
+function update(){
+  $("total").textContent = $("q2").checked ? "$219.900" : "$129.900";
+  $("send").href = wa(msg());
+  if (fields.every(f => $(f).value.trim())) $("err").hidden = true;
+}
+document.querySelectorAll("#form input").forEach(i => { i.addEventListener("input", update); i.addEventListener("change", update); });
 update();
 $("send").addEventListener("click", e => {
-  if (!fields.every(f => $(f).value.trim())) { e.preventDefault(); $("err").hidden = false; }
+  if (!fields.every(f => $(f).value.trim())) { e.preventDefault(); $("err").hidden = false; $(fields.find(f => !$(f).value.trim())).focus(); }
 });
 $("form").addEventListener("submit", e => e.preventDefault());
 </script>
-
 </body>
 </html>
